@@ -1,0 +1,19 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite1" verbose="1">
+    <test name="Sprint1">
+        <classes>
+        	
+        	<!--  Major Functioanlity  -->
+			<class name="Major_functions.Add_multifamily_Property"></class>
+			<class name="Major_functions.Add_single_property"></class>
+			<class name="Major_functions.Add_Tenant"></class>
+			<class name="Major_functions.Add_multifamily_Property"></class>
+			<class name="Major_functions.Add_multifamily_Property"></class>
+			
+			
+           
+        </classes>
+
+   		 </test>
+    
+</suite>
