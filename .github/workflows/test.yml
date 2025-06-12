@@ -23,10 +23,11 @@ jobs:
       - name: Run tests with Maven and collect results
         shell: bash
         run: |
-          mvn test 2>&1 | tee mvn_output.log
+          mvn test -B 2>&1 | tee mvn_output.log
           MAVEN_EXIT_CODE=${PIPESTATUS[0]}
       
           echo "## 🧪 Test Summary" >> $GITHUB_STEP_SUMMARY
-          grep -A 20 '\[INFO\] Results:' mvn_output.log >> $GITHUB_STEP_SUMMARY || echo "No results found" >> $GITHUB_STEP_SUMMARY
+          # Search more flexibly for the results block
+          grep -E 'Tests run:|Failures:|Errors:|Skipped:' mvn_output.log >> $GITHUB_STEP_SUMMARY || echo "No test result summary found" >> $GITHUB_STEP_SUMMARY
       
           exit $MAVEN_EXIT_CODE
