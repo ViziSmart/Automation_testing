@@ -1,0 +1,34 @@
+name: Run Selenium Automation Tests
+
+on:
+  push:
+    branches:
+      - main   # Or dev, or whatever branch you want
+  workflow_dispatch:
+
+jobs:
+  selenium-tests:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v2
+
+      - name: Set up Java
+        uses: actions/setup-java@v3
+        with:
+          java-version: '17'
+          distribution: 'temurin'
+
+      - name: Set up Maven
+        run: sudo apt-get install -y maven
+
+      - name: Run Maven Tests
+        run: mvn clean test
+
+      - name: Upload TestNG Reports
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: TestNG Reports
+          path: test-output/
