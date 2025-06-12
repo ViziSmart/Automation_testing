@@ -21,11 +21,12 @@ jobs:
           distribution: 'temurin'
 
       - name: Run tests with Maven and collect results
+        shell: bash
         run: |
           mvn test 2>&1 | tee mvn_output.log
-          test_exit_code=${PIPESTATUS[0]}
-
-          echo "## Test Summary" >> $GITHUB_STEP_SUMMARY
-          grep -A 20 '\[INFO\] Results:' mvn_output.log >> $GITHUB_STEP_SUMMARY
-
-          exit $test_exit_code
+          MAVEN_EXIT_CODE=${PIPESTATUS[0]}
+      
+          echo "## 🧪 Test Summary" >> $GITHUB_STEP_SUMMARY
+          grep -A 20 '\[INFO\] Results:' mvn_output.log >> $GITHUB_STEP_SUMMARY || echo "No results found" >> $GITHUB_STEP_SUMMARY
+      
+          exit $MAVEN_EXIT_CODE
