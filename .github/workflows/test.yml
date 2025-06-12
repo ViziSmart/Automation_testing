@@ -1,33 +1,34 @@
-name: Run Selenium Tests
+name: Run Selenium Automation Tests
 
 on:
   push:
     branches:
-      - main
-  pull_request:
+      - main   # Or dev, or whatever branch you want
+  workflow_dispatch:
 
 jobs:
   selenium-tests:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout code
+      - name: Checkout repo
         uses: actions/checkout@v2
 
-      - name: Set up JDK 11
+      - name: Set up Java
         uses: actions/setup-java@v3
         with:
-          java-version: '11'
+          java-version: '17'
           distribution: 'temurin'
 
-      - name: Run tests with Maven and collect results
-        shell: bash
-        run: |
-          mvn test -B 2>&1 | tee mvn_output.log
-          MAVEN_EXIT_CODE=${PIPESTATUS[0]}
-      
-          echo "## 🧪 Test Summary" >> $GITHUB_STEP_SUMMARY
-          # Search more flexibly for the results block
-          grep -E 'Tests run:|Failures:|Errors:|Skipped:' mvn_output.log >> $GITHUB_STEP_SUMMARY || echo "No test result summary found" >> $GITHUB_STEP_SUMMARY
-      
-          exit $MAVEN_EXIT_CODE
+      - name: Set up Maven
+        run: sudo apt-get install -y maven
+
+      - name: Run Maven Tests
+        run: mvn clean test
+
+      - name: Upload TestNG Reports
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: TestNG Reports
+          path: test-output/
