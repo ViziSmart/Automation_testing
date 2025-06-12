@@ -20,8 +20,12 @@ jobs:
           java-version: '11'
           distribution: 'temurin'
 
-      - name: Run tests with Maven
+      - name: Run tests with Maven and collect results
         run: |
-          mvn test | tee mvn_output.log
+          mvn test 2>&1 | tee mvn_output.log
+          test_exit_code=${PIPESTATUS[0]}
+
           echo "## Test Summary" >> $GITHUB_STEP_SUMMARY
-          grep -A 10 '\[INFO\] Results:' mvn_output.log >> $GITHUB_STEP_SUMMARY
+          grep -A 20 '\[INFO\] Results:' mvn_output.log >> $GITHUB_STEP_SUMMARY
+
+          exit $test_exit_code
