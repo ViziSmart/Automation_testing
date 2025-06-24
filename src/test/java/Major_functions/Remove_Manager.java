@@ -1,17 +1,23 @@
-package A_Positive_Testing;
+package Major_functions;
 
 import java.time.Duration;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Reporter;
+import org.testng.annotations.Test;
+
 import io.github.bonigarcia.wdm.WebDriverManager;
 
-public class AN_RemoveManager {
+public class Remove_Manager {
+	
+
+	@Test
 	
 	public void remove() throws InterruptedException {
       	WebDriverManager.chromedriver().setup();
@@ -50,18 +56,28 @@ public class AN_RemoveManager {
         
         WebElement manager_tab= wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id=\"details27\"]/button[3]")));
         manager_tab.click();
-        
-        WebElement remove_btn = wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id=\"details18\"]/div[5]/div[2]/div[1]/div/div[2]/button")));
-        remove_btn.click();
+
+        WebElement remove_btn = wait.until(ExpectedConditions.presenceOfElementLocated(
+        	    By.xpath("/html/body/div/div/div[3]/div/div[4]/div[2]/div[1]/div/div[2]/button")
+        	));
+
+        	// Scroll to the element before clicking
+        	((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", remove_btn);
+
+        	// Optional: small wait for smooth scroll or UI animations
+        	Thread.sleep(500);
+
+        	remove_btn.click();
         
         WebElement sure_btn= wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("/html/body/div[2]/div/div[6]/button[1]")));
         sure_btn.click();
         
         Thread.sleep(3000);
-        
+       
         driver.close();
         
         
 	}
+
 
 }

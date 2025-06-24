@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Major_functions.Remove_Vendor">
+      <class name="A_Positive_Testing.AN_RemoveManager">
         <methods>
           <include name="remove"/>
         </methods>
-      </class> <!-- Major_functions.Remove_Vendor -->
+      </class> <!-- A_Positive_Testing.AN_RemoveManager -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

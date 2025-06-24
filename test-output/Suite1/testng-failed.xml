@@ -3,16 +3,11 @@
 <suite name="Failed suite [Suite1]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Sprint1(failed)">
     <classes>
-      <class name="A_Positive_Testing.A_SignupAsPM">
+      <class name="Major_functions.Add_Manager">
         <methods>
-          <include name="Signup_page"/>
+          <include name="add"/>
         </methods>
-      </class> <!-- A_Positive_Testing.A_SignupAsPM -->
-      <class name="A_Positive_Testing.AB_SignupAsVendor">
-        <methods>
-          <include name="Signup_page"/>
-        </methods>
-      </class> <!-- A_Positive_Testing.AB_SignupAsVendor -->
+      </class> <!-- Major_functions.Add_Manager -->
     </classes>
   </test> <!-- Sprint1(failed) -->
 </suite> <!-- Failed suite [Suite1] -->

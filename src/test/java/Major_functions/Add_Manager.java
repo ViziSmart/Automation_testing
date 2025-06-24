@@ -1,7 +1,8 @@
-package A_Positive_Testing;
+package Major_functions;
 
-import java.time.Duration; 
+import java.time.Duration;
 import java.util.concurrent.TimeUnit;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -9,10 +10,12 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Reporter;
 import org.testng.annotations.Test;
+
 import io.github.bonigarcia.wdm.WebDriverManager;
 
-public class AL_AddManager {
+public class Add_Manager {
 	
+
 	@Test
 	public void add() throws InterruptedException {
 		
@@ -52,13 +55,13 @@ public class AL_AddManager {
 	        WebElement manager_tab= wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id=\"details27\"]/button[3]")));
 	        manager_tab.click();
 	        
-	        WebElement add_manager= wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id=\"details18\"]/div[5]/div[1]/button/span")));
+	        WebElement add_manager= wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id=\"details18\"]/div[4]/div[1]/button")));
 	        add_manager.click();
 	        
-	        WebElement search_manager= wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id=\"details18\"]/div[5]/div[1]/div/div/div[1]/input")));
+	        WebElement search_manager= wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id=\"details18\"]/div[4]/div[1]/div/div/div[1]/input")));
 	        search_manager.sendKeys("selenium");
 	        
-	        WebElement assign = wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id=\"details18\"]/div[5]/div[1]/div/div/div[2]/div[3]/div/div/div[2]/button")));
+	        WebElement assign = wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id=\"details18\"]/div[4]/div[1]/div/div/div[2]/div[1]/div/div/div[2]/button")));
 	        assign.click();
 	        
 	        WebElement close_btn = wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("#details18 > div:nth-child(5) > div.bg-slate-300.flex.justify-between > div > div > svg")));
@@ -69,5 +72,6 @@ public class AL_AddManager {
 	        driver.close();
 	        
 	}
+
 
 }
