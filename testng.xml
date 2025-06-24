@@ -4,15 +4,33 @@
         <classes>
         	<!--  Major Functioanlity  -->
         	<!-- Addition and deletions of user and property  -->
+        	
+        	<!-- add and remove Property -->
 			<class name="Major_functions.Add_multifamily_Property"></class>
 			<class name="Major_functions.Remove_Property"></class>
 			<class name="Major_functions.Add_single_property"></class>
+			
+			<!--  add and remove tenant -->
 			<class name="Major_functions.Add_Tenant"></class>
 			<class name="Major_functions.Remove_tenant"></class>
+			
+			<!-- add, remove and onboard vendor  -->
             <class name="Major_functions.Add_vendor"></class>
             <class name="Major_functions.Remove_Vendor"></class>
+            <class name="Major_functions.Onboard_Vendor"></class>
+            
+            <!-- add, remove and onboard manager  -->
 			<class name="Major_functions.Add_Manager"></class>
 			<class name="Major_functions.Remove_Manager"></class>
+			<class name="Major_functions.Onboard_Manager"></class>
+			
+			<!-- add, remove and onboard landlord  -->
+			<class name="Major_functions.Add_Landlord"></class>
+			<class name="Major_functions.Remove_Landlord"></class>
+			<class name="Major_functions.Onboard_Landlord"></class>
+			
+			
+			
 			
         </classes>
 

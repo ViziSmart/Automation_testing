@@ -1,4 +1,4 @@
-package A_Positive_Testing;
+package Major_functions;
 
 import java.time.Duration;
 import java.util.concurrent.TimeUnit;
@@ -9,13 +9,17 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Reporter;
+import org.testng.annotations.Test;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
-public class AQ_RemoveLandlord {
+public class Add_Landlord {
 	
-	public void remove() throws InterruptedException {
-		WebDriverManager.chromedriver().setup();
+
+	@Test
+	public void add() throws InterruptedException {
+		
+      	WebDriverManager.chromedriver().setup();
         ChromeDriver driver = new ChromeDriver();
         Reporter.log("ChromeDriver initialized", true);
 
@@ -41,27 +45,27 @@ public class AQ_RemoveLandlord {
         driver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
         Reporter.log("Implicit wait set for 2 seconds", true);
         
-        // add manager process ...
+        //add landlord process ....
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         
         WebElement select_prop = wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id=\"root\"]/div/div[3]/div/div[2]/div[1]/div/div[1]/div/div")));
         select_prop.click();
         Reporter.log("Select property to add vendor", true);
-    
         
         WebElement landlord_tab= wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id=\"details27\"]/button[4]")));
         landlord_tab.click();
         
-        WebElement remove_btn = wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id=\"details18\"]/div[5]/div[2]/div/div/div[2]/button")));
-        remove_btn.click();
+        WebElement add_landlord= wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("/html/body/div/div/div[3]/div/div[4]/div[1]/button")));
+        add_landlord.click();
+
+        Thread.sleep(1000);
+        WebElement assign_btn= wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("/html/body/div/div/div[3]/div/div[4]/div[1]/div/div/div[2]/div[1]/div/div/div[2]/button")));
+        assign_btn.click();
         
-        WebElement sure_btn = wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("/html/body/div[2]/div/div[6]/button[1]")));
-        sure_btn.click();
-        
-        Thread.sleep(2000);
+        Thread.sleep(5000);
         
         driver.close();
-		
 	}
+
 
 }

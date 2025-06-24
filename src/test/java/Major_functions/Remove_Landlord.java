@@ -1,22 +1,23 @@
-package A_Positive_Testing;
+package Major_functions;
 
 import java.time.Duration;
 import java.util.concurrent.TimeUnit;
-
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Reporter;
+import org.testng.annotations.Test;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
-public class AO_AddLandlord {
+public class Remove_Landlord {
 	
-	public void add() throws InterruptedException {
-		
-      	WebDriverManager.chromedriver().setup();
+	@Test
+	public void remove() throws InterruptedException {
+		WebDriverManager.chromedriver().setup();
         ChromeDriver driver = new ChromeDriver();
         Reporter.log("ChromeDriver initialized", true);
 
@@ -42,28 +43,32 @@ public class AO_AddLandlord {
         driver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
         Reporter.log("Implicit wait set for 2 seconds", true);
         
-        //add landlord process ....
+        // add manager process ...
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         
         WebElement select_prop = wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id=\"root\"]/div/div[3]/div/div[2]/div[1]/div/div[1]/div/div")));
         select_prop.click();
         Reporter.log("Select property to add vendor", true);
+    
         
         WebElement landlord_tab= wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id=\"details27\"]/button[4]")));
         landlord_tab.click();
         
-        WebElement add_landlord= wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id=\"details18\"]/div[5]/div[1]/button/span")));
-        add_landlord.click();
         
-        WebElement search_landlordr= wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id=\"details18\"]/div[5]/div[1]/div/div/div[1]/input")));
-        search_landlordr.sendKeys("selenium");
+        Thread.sleep(500);
+        WebElement remove_btn = wait.until(ExpectedConditions.presenceOfElementLocated(
+        	    By.xpath("/html/body/div/div/div[3]/div/div[4]/div[2]/div/div/div[2]/button")
+        	));
+        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", remove_btn);
+        remove_btn.click();
+        	
+        WebElement sure_btn = wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("/html/body/div[2]/div/div[6]/button[1]")));
+        sure_btn.click();
         
-        WebElement assign_btn= wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id=\"details18\"]/div[5]/div[1]/div/div/div[2]/div[1]/div/div/div[2]/button")));
-        assign_btn.click();
-        
-        Thread.sleep(3000);
+        Thread.sleep(2000);
         
         driver.close();
+		
 	}
 
 }
