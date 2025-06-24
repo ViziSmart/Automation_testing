@@ -78,10 +78,21 @@ public class Remove_Vendor {
             System.out.println("Second element clicked.");
         }
         
+        Thread.sleep(1000);
         
-        WebElement removeBtn = driver.findElement(By.xpath("//*[@id=\"root\"]/div/div[3]/div/div[5]/div[2]/div/div/div[2]/div/button[2]"));
-        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", removeBtn);
-        removeBtn.click();
+        WebElement removeBtn = driver.findElement(By.xpath("/html/body/div/div/div[3]/div/div[4]/div[2]/div/div/div[2]/div/button[2]"));
+
+     // Scroll into view
+     ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView({block: 'center', inline: 'nearest'});", removeBtn);
+
+     // Small delay to allow scroll to complete (if needed)
+     Thread.sleep(500);
+
+     // Optional: Highlight to verify visibility (for debugging)
+     ((JavascriptExecutor) driver).executeScript("arguments[0].style.border='3px solid red'", removeBtn);
+
+     // Click the button
+     removeBtn.click();
         
         WebElement sureBtn = driver.findElement(By.xpath("/html/body/div[2]/div/div[6]/button[1]"));
         sureBtn.click();

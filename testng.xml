@@ -7,11 +7,9 @@
 			<class name="Major_functions.Add_multifamily_Property"></class>
 			<class name="Major_functions.Add_single_property"></class>
 			<class name="Major_functions.Add_Tenant"></class>
-			<class name="Major_functions.Add_multifamily_Property"></class>
-			<class name="Major_functions.Add_multifamily_Property"></class>
-			
-			
-           
+			<class name="Major_functions.Remove_tenant"></class>
+            <class name="Major_functions.Add_vendor"></class>
+            <class name="Major_functions.Remove_vendor"></class>
         </classes>
 
    		 </test>

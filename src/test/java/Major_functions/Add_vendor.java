@@ -1,6 +1,6 @@
 package Major_functions;
 
-import java.time.Duration;
+import java.time.Duration; 
 import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
@@ -80,27 +80,26 @@ public class Add_vendor {
         WebElement add_Vendor = driver.findElement(By.xpath("//*[@id=\"vstab2\"]"));
         add_Vendor.click();
         Reporter.log("Clicked on Add Vendor icon", true);
-
+        
+        Thread.sleep(1000);
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         Reporter.log("Implicit wait set for 10 seconds", true);
 
         WebElement Search_Vendor = wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("/html/body/div/div/div[3]/div/div[4]/div[3]/div/div[1]/input")));
         Search_Vendor.sendKeys("temp");
         Reporter.log("Search the vendor in the list", true);
-
+        
+        Thread.sleep(1000);
         WebElement Assign_spl = wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id=\"vendorcard13\"]")));
         ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", Assign_spl);
         Assign_spl.click();
         Reporter.log("Clicked on assign button", true);
         
-        WebElement Specailty_one = wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id=\"vendorcard15\"]")));
+        WebElement Specailty_one = wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("/html/body/div/div/div[3]/div/div[4]/div[3]/div/div[2]/div[1]/div/div/div[2]/div/ul/li")));
         Specailty_one.click();
         Reporter.log("Seleted first speciality of vendor", true);
         
-        WebElement Specailty_Two = wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id=\"vendorcard15\"]")));
-        Specailty_Two.click();
-        Reporter.log("Selected second speciality of vendor", true);
-        
+    
         ((JavascriptExecutor) driver).executeScript("window.scrollBy(0, 300);");
         
         WebElement Submit_btn = wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id=\"vendorcard18\"]")));
