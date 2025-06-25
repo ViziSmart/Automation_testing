@@ -24,7 +24,7 @@ jobs:
         run: sudo apt-get install -y maven
 
       - name: Run Maven Tests
-        run: mvn clean test
+        run: mvn clean test -DsuiteXmlFile=testng.xml
 
       - name: Upload TestNG Reports
         if: always()
