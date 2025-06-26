@@ -28,8 +28,8 @@ public class Remove_Vendor extends BaseTest {
     @Test
     public void remove() throws InterruptedException {
         
-        WebDriverManager.chromedriver().setup();
-        ChromeDriver driver = new ChromeDriver();
+//        WebDriverManager.chromedriver().setup();
+//        ChromeDriver driver = new ChromeDriver();
         
         Reporter.log("Launching the application", true);
         driver.get("https://dev.vizismart.com/login");

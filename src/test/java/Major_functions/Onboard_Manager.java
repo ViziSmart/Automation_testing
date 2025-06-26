@@ -42,8 +42,8 @@ public class Onboard_Manager extends BaseTest {
 	
 	@Test
 	public void onboard() throws InterruptedException {
-      	WebDriverManager.chromedriver().setup();
-        ChromeDriver driver = new ChromeDriver();
+//      	WebDriverManager.chromedriver().setup();
+//        ChromeDriver driver = new ChromeDriver();
         Reporter.log("ChromeDriver initialized", true);
 
         // Login process...

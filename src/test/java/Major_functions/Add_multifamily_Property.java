@@ -17,8 +17,8 @@ public class Add_multifamily_Property extends BaseTest {
 	
 	@Test
 	public void add() throws InterruptedException {
-        WebDriverManager.chromedriver().setup();
-        ChromeDriver driver = new ChromeDriver();
+//        WebDriverManager.chromedriver().setup();
+//        ChromeDriver driver = new ChromeDriver();
         Reporter.log("ChromeDriver initialized", true);
 
         driver.get("https://dev.vizismart.com/login");

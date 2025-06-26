@@ -28,8 +28,8 @@ public class Add_vendor extends BaseTest{
     @Test
     public void add() throws InterruptedException {
 
-        WebDriverManager.chromedriver().setup();
-        ChromeDriver driver = new ChromeDriver();
+//        WebDriverManager.chromedriver().setup();
+//        ChromeDriver driver = new ChromeDriver();
         Reporter.log("ChromeDriver initialized", true);
 
         // Login process...

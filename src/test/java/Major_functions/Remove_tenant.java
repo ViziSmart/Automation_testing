@@ -26,8 +26,8 @@ public class Remove_tenant extends BaseTest {
 
 	    @Test
 	    public void delete() throws InterruptedException {
-	        WebDriverManager.chromedriver().setup();
-	        ChromeDriver driver = new ChromeDriver();
+//	        WebDriverManager.chromedriver().setup();
+//	        ChromeDriver driver = new ChromeDriver();
 	        Reporter.log("ChromeDriver initialized", true);
 
 	        // Login process...
