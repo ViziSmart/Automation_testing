@@ -13,7 +13,7 @@ import org.testng.annotations.Test;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
-public class Remove_Landlord {
+public class Remove_Landlord extends BaseTest {
 	
 	@Test
 	public void remove() throws InterruptedException {

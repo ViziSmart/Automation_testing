@@ -14,7 +14,7 @@ import org.testng.annotations.Test;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
-public class Remove_Manager {
+public class Remove_Manager extends BaseTest {
 	
 
 	@Test

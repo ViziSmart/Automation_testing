@@ -13,7 +13,7 @@ import org.testng.Reporter;
 import org.testng.annotations.Test;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
-public class Add_Tenant {
+public class Add_Tenant extends BaseTest{
 	
 	public static boolean isElementPresent(WebDriver driver, By locator) {
         try {

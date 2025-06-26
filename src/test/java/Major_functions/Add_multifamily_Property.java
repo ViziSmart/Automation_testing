@@ -13,7 +13,7 @@ import org.testng.annotations.Test;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
-public class Add_multifamily_Property {
+public class Add_multifamily_Property extends BaseTest {
 	
 	@Test
 	public void add() throws InterruptedException {

@@ -7,15 +7,10 @@ import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
-
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class Basetest {
 	
-	
-
-
-
 	    protected WebDriver driver;
 
 	    @BeforeMethod

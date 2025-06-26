@@ -13,7 +13,7 @@ import org.testng.Reporter;
 import org.testng.annotations.Test;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
-public class Onboard_Landlord {
+public class Onboard_Landlord extends BaseTest {
 
 
 	// Function to generate a random phone number

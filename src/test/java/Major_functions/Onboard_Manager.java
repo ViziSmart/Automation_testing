@@ -13,7 +13,7 @@ import org.testng.annotations.Test;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
-public class Onboard_Manager {
+public class Onboard_Manager extends BaseTest {
 	
 
     // Function to generate a random phone number

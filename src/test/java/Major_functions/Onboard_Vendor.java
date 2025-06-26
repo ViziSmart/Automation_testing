@@ -13,7 +13,7 @@ import org.testng.annotations.Test;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
-public class Onboard_Vendor {
+public class Onboard_Vendor extends BaseTest {
 	
 		
 	    public String generateRandomEmail() {

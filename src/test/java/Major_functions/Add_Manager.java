@@ -13,7 +13,7 @@ import org.testng.annotations.Test;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
-public class Add_Manager {
+public class Add_Manager extends BaseTest {
 	
 
 	@Test

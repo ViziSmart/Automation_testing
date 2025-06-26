@@ -13,7 +13,7 @@ import org.testng.annotations.Test;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
-public class Remove_tenant {
+public class Remove_tenant extends BaseTest {
 	
 		public static boolean isElementPresent(WebDriver driver, By locator) {
 		        try {

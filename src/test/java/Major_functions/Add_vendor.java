@@ -14,7 +14,7 @@ import org.testng.annotations.Test;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
-public class Add_vendor {
+public class Add_vendor extends BaseTest{
 	
 	public static boolean isElementPresent(WebDriver driver, By locator) {
         try {
