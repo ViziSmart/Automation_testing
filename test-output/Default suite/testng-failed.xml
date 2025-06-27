@@ -3,11 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Major_functions.Onboard_Landlord">
+      <class name="Major_functions.Remove_tenant">
         <methods>
-          <include name="onboard"/>
+          <include name="delete"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
         </methods>
-      </class> <!-- Major_functions.Onboard_Landlord -->
+      </class> <!-- Major_functions.Remove_tenant -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -7,7 +7,7 @@
 
     <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
     <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
-    <script type="text/javascript" src="jquery.min.js"></script>
+    <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
     <script type="text/javascript" src="testng-reports.js"></script>
     <script type="text/javascript" src="https://www.google.com/jsapi"></script>
     <script type='text/javascript'>
@@ -21,12 +21,11 @@
      -->
   </head>
 
-  <body>
-    <div class="top-banner-root">
+  <body>    <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 3 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,8 +38,8 @@
       <div class="suite">
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
-            <a href="#" panel-name="suite-Default_suite" class="navigator-link">
-              <span class="suite-name border-passed">Default suite</span>
+            <a href="#" panel-name="suite-Suite1" class="navigator-link">
+              <span class="suite-name border-failed">Suite1</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -50,37 +49,37 @@
             <div class="suite-section-content">
               <ul>
                 <li>
-                  <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\admin\AppData\Local\Temp\testng-eclipse-721906424\testng-customsuite.xml</span>
+                  <a href="#" panel-name="test-xml-Suite1" class="navigator-link ">
+                    <span>testng.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="testlist-Default_suite" class="navigator-link ">
+                  <a href="#" panel-name="testlist-Suite1" class="navigator-link ">
                     <span class="test-stats">1 test</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="group-Default_suite" class="navigator-link ">
+                  <a href="#" panel-name="group-Suite1" class="navigator-link ">
                     <span>0 groups</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="times-Default_suite" class="navigator-link ">
+                  <a href="#" panel-name="times-Suite1" class="navigator-link ">
                     <span>Times</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="reporter-Default_suite" class="navigator-link ">
+                  <a href="#" panel-name="reporter-Suite1" class="navigator-link ">
                     <span>Reporter output</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="ignored-methods-Default_suite" class="navigator-link ">
+                  <a href="#" panel-name="ignored-methods-Suite1" class="navigator-link ">
                     <span>Ignored methods</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="chronological-Default_suite" class="navigator-link ">
+                  <a href="#" panel-name="chronological-Suite1" class="navigator-link ">
                     <span>Chronological view</span>
                   </a> <!-- navigator-link  -->
                 </li>
@@ -93,21 +92,95 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,   1 passed</span>
+                    <span class="method-stats">14 methods, 3 failed,   11 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suite1" class="hide-methods failed suite-Suite1"> (hide)</a> <!-- hide-methods failed suite-Suite1 -->
+                      <a href="#" panel-name="suite-Suite1" class="show-methods failed suite-Suite1"> (show)</a> <!-- show-methods failed suite-Suite1 -->
+                    </span>
+                    <div class="method-list-content failed suite-Suite1">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite1" title="Major_functions.Add_Manager" class="method navigator-link" hash-for-method="add">add</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite1" title="Major_functions.Onboard_Landlord" class="method navigator-link" hash-for-method="onboard">onboard</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite1" title="Major_functions.Onboard_Manager" class="method navigator-link" hash-for-method="onboard">onboard</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Suite1 -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
                     <span class="show-or-hide-methods passed">
-                      <a href="#" panel-name="suite-Default_suite" class="hide-methods passed suite-Default_suite"> (hide)</a> <!-- hide-methods passed suite-Default_suite -->
-                      <a href="#" panel-name="suite-Default_suite" class="show-methods passed suite-Default_suite"> (show)</a> <!-- show-methods passed suite-Default_suite -->
+                      <a href="#" panel-name="suite-Suite1" class="hide-methods passed suite-Suite1"> (hide)</a> <!-- hide-methods passed suite-Suite1 -->
+                      <a href="#" panel-name="suite-Suite1" class="show-methods passed suite-Suite1"> (show)</a> <!-- show-methods passed suite-Suite1 -->
                     </span>
-                    <div class="method-list-content passed suite-Default_suite">
+                    <div class="method-list-content passed suite-Suite1">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="Major_functions.Onboard_Landlord" class="method navigator-link" hash-for-method="onboard">onboard</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite1" title="Major_functions.Onboard_Vendor" class="method navigator-link" hash-for-method="Onboard">Onboard</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content passed suite-Default_suite -->
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite1" title="Major_functions.Add_multifamily_Property" class="method navigator-link" hash-for-method="add">add</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite1" title="Major_functions.Add_Tenant" class="method navigator-link" hash-for-method="add">add</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite1" title="Major_functions.Add_vendor" class="method navigator-link" hash-for-method="add">add</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite1" title="Major_functions.Add_single_property" class="method navigator-link" hash-for-method="add">add</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite1" title="Major_functions.Add_Landlord" class="method navigator-link" hash-for-method="add">add</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite1" title="Major_functions.Remove_tenant" class="method navigator-link" hash-for-method="delete">delete</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite1" title="Major_functions.Remove_Property" class="method navigator-link" hash-for-method="remove">remove</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite1" title="Major_functions.Remove_Manager" class="method navigator-link" hash-for-method="remove">remove</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite1" title="Major_functions.Remove_Landlord" class="method navigator-link" hash-for-method="remove">remove</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite1" title="Major_functions.Remove_Vendor" class="method navigator-link" hash-for-method="remove">remove</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Suite1 -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -118,10 +191,49 @@
     </div> <!-- navigator-root -->
     <div class="wrapper">
       <div class="main-panel-root">
-        <div panel-name="suite-Default_suite" class="panel Default_suite">
-          <div class="suite-Default_suite-class-passed">
+        <div panel-name="suite-Suite1" class="panel Suite1">
+          <div class="suite-Suite1-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
+              <img src="failed.png"/>
+              <span class="class-name">Major_functions.Onboard_Manager</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="onboard">
+                  </a> <!-- onboard -->
+                  <span class="method-name">onboard</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;/html/body/div/div/div[3]/div/div[4]/div[1]/div/div[2]/div/div/div/div/form/div[1]/input[6]&quot;}
+  (Session info: chrome=137.0.7151.120)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.9.0&apos;, revision: &apos;d7057100a6&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;15.5&apos;, java.version: &apos;21.0.7&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [09853b285de95d4d748aedfcfbc80683, findElement {using=xpath, value=/html/body/div/div/div[3]/div/div[4]/div[1]/div/div[2]/div/div/div/div/form/div[1]/input[6]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.120, chrome: {chromedriverVersion: 137.0.7151.119 (e0ac9d12dff..., userDataDir: /var/folders/tv/r8sg1_9d3v1...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50962}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:50962/devtoo..., se:cdpVersion: 137.0.7151.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 09853b285de95d4d748aedfcfbc80683
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at Major_functions.Onboard_Manager.onboard(Onboard_Manager.java:104)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 28 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite1-class-failed -->
+          <div class="suite-Suite1-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
               <span class="class-name">Major_functions.Onboard_Landlord</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -130,82 +242,553 @@
                   <a name="onboard">
                   </a> <!-- onboard -->
                   <span class="method-name">onboard</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;/html/body/div/div/div[3]/div/div[4]/div[1]/div/div[2]/div/div/div/div/form/div[1]/input[6]&quot;}
+  (Session info: chrome=137.0.7151.120)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.9.0&apos;, revision: &apos;d7057100a6&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;15.5&apos;, java.version: &apos;21.0.7&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [0d84f88d579e9723428da8dd60d09967, findElement {using=xpath, value=/html/body/div/div/div[3]/div/div[4]/div[1]/div/div[2]/div/div/div/div/form/div[1]/input[6]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.120, chrome: {chromedriverVersion: 137.0.7151.119 (e0ac9d12dff..., userDataDir: /var/folders/tv/r8sg1_9d3v1...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51125}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:51125/devtoo..., se:cdpVersion: 137.0.7151.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 0d84f88d579e9723428da8dd60d09967
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at Major_functions.Onboard_Landlord.onboard(Onboard_Landlord.java:104)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 28 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Default_suite-class-passed -->
-        </div> <!-- panel Default_suite -->
-        <div panel-name="test-xml-Default_suite" class="panel">
+          </div> <!-- suite-Suite1-class-failed -->
+          <div class="suite-Suite1-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">Major_functions.Add_Manager</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="add">
+                  </a> <!-- add -->
+                  <span class="method-name">add</span>
+                  <div class="stack-trace">org.openqa.selenium.InvalidSelectorException: invalid selector: Unable to locate an element with the xpath expression #details18 &gt; div:nth-child(5) &gt; div.bg-slate-300.flex.justify-between &gt; div &gt; div &gt; svg because of the following error:
+SyntaxError: Failed to execute &apos;evaluate&apos; on &apos;Document&apos;: The string &apos;#details18 &gt; div:nth-child(5) &gt; div.bg-slate-300.flex.justify-between &gt; div &gt; div &gt; svg&apos; is not a valid XPath expression.
+  (Session info: chrome=137.0.7151.120)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#invalid_selector_exception
+Build info: version: &apos;4.9.0&apos;, revision: &apos;d7057100a6&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;15.5&apos;, java.version: &apos;21.0.7&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [08ed4b57c73b55d6a8b3ced650b05c2e, findElement {using=xpath, value=#details18 &gt; div:nth-child(5) &gt; div.bg-slate-300.flex.justify-between &gt; div &gt; div &gt; svg}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.120, chrome: {chromedriverVersion: 137.0.7151.119 (e0ac9d12dff..., userDataDir: /var/folders/tv/r8sg1_9d3v1...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50846}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:50846/devtoo..., se:cdpVersion: 137.0.7151.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 08ed4b57c73b55d6a8b3ced650b05c2e
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:174)
+	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:171)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208)
+	at Major_functions.Add_Manager.add(Add_Manager.java:67)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 28 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite1-class-failed -->
+          <div class="suite-Suite1-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">Major_functions.Add_Tenant</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="add">
+                  </a> <!-- add -->
+                  <span class="method-name">add</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite1-class-passed -->
+          <div class="suite-Suite1-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">Major_functions.Add_multifamily_Property</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="add">
+                  </a> <!-- add -->
+                  <span class="method-name">add</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite1-class-passed -->
+          <div class="suite-Suite1-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">Major_functions.Add_vendor</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="add">
+                  </a> <!-- add -->
+                  <span class="method-name">add</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite1-class-passed -->
+          <div class="suite-Suite1-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">Major_functions.Remove_Vendor</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="remove">
+                  </a> <!-- remove -->
+                  <span class="method-name">remove</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite1-class-passed -->
+          <div class="suite-Suite1-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">Major_functions.Remove_Landlord</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="remove">
+                  </a> <!-- remove -->
+                  <span class="method-name">remove</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite1-class-passed -->
+          <div class="suite-Suite1-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">Major_functions.Remove_tenant</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="delete">
+                  </a> <!-- delete -->
+                  <span class="method-name">delete</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite1-class-passed -->
+          <div class="suite-Suite1-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">Major_functions.Remove_Property</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="remove">
+                  </a> <!-- remove -->
+                  <span class="method-name">remove</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite1-class-passed -->
+          <div class="suite-Suite1-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">Major_functions.Add_single_property</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="add">
+                  </a> <!-- add -->
+                  <span class="method-name">add</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite1-class-passed -->
+          <div class="suite-Suite1-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">Major_functions.Remove_Manager</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="remove">
+                  </a> <!-- remove -->
+                  <span class="method-name">remove</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite1-class-passed -->
+          <div class="suite-Suite1-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">Major_functions.Onboard_Vendor</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="Onboard">
+                  </a> <!-- Onboard -->
+                  <span class="method-name">Onboard</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite1-class-passed -->
+          <div class="suite-Suite1-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">Major_functions.Add_Landlord</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="add">
+                  </a> <!-- add -->
+                  <span class="method-name">add</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite1-class-passed -->
+        </div> <!-- panel Suite1 -->
+        <div panel-name="test-xml-Suite1" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\admin\AppData\Local\Temp\testng-eclipse-721906424\testng-customsuite.xml</span>
+            <span class="header-content">/Users/squares/Documents/vizismart/Automation_testing/testng.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite name=&quot;Default suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;Default test&quot; verbose=&quot;2&quot;&gt;
+&lt;suite name=&quot;Suite1&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Sprint1&quot;&gt;
     &lt;classes&gt;
+      &lt;class name=&quot;Major_functions.Add_multifamily_Property&quot;/&gt;
+      &lt;class name=&quot;Major_functions.Remove_Property&quot;/&gt;
+      &lt;class name=&quot;Major_functions.Add_single_property&quot;/&gt;
+      &lt;class name=&quot;Major_functions.Add_Tenant&quot;/&gt;
+      &lt;class name=&quot;Major_functions.Remove_tenant&quot;/&gt;
+      &lt;class name=&quot;Major_functions.Add_vendor&quot;/&gt;
+      &lt;class name=&quot;Major_functions.Remove_Vendor&quot;/&gt;
+      &lt;class name=&quot;Major_functions.Onboard_Vendor&quot;/&gt;
+      &lt;class name=&quot;Major_functions.Add_Manager&quot;/&gt;
+      &lt;class name=&quot;Major_functions.Remove_Manager&quot;/&gt;
+      &lt;class name=&quot;Major_functions.Onboard_Manager&quot;/&gt;
+      &lt;class name=&quot;Major_functions.Add_Landlord&quot;/&gt;
+      &lt;class name=&quot;Major_functions.Remove_Landlord&quot;/&gt;
       &lt;class name=&quot;Major_functions.Onboard_Landlord&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- Default test --&gt;
-&lt;/suite&gt; &lt;!-- Default suite --&gt;
+  &lt;/test&gt; &lt;!-- Sprint1 --&gt;
+&lt;/suite&gt; &lt;!-- Suite1 --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="testlist-Default_suite" class="panel">
+        <div panel-name="testlist-Suite1" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Tests for Default suite</span>
+            <span class="header-content">Tests for Suite1</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Default test (1 class)</span>
+                <span class="test-name">Sprint1 (14 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="group-Default_suite" class="panel">
+        <div panel-name="group-Suite1" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Groups for Default suite</span>
+            <span class="header-content">Groups for Suite1</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="times-Default_suite" class="panel">
+        <div panel-name="times-Suite1" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Times for Default suite</span>
+            <span class="header-content">Times for Suite1</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="times-div">
               <script type="text/javascript">
-suiteTableInitFunctions.push('tableData_Default_suite');
-function tableData_Default_suite() {
+suiteTableInitFunctions.push('tableData_Suite1');
+function tableData_Suite1() {
 var data = new google.visualization.DataTable();
 data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(14);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'onboard')
-data.setCell(0, 2, 'Major_functions.Onboard_Landlord')
-data.setCell(0, 3, 15184);
-window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
+data.setCell(0, 1, 'remove')
+data.setCell(0, 2, 'Major_functions.Remove_Vendor')
+data.setCell(0, 3, 56750);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'Onboard')
+data.setCell(1, 2, 'Major_functions.Onboard_Vendor')
+data.setCell(1, 3, 51505);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'delete')
+data.setCell(2, 2, 'Major_functions.Remove_tenant')
+data.setCell(2, 3, 47333);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'onboard')
+data.setCell(3, 2, 'Major_functions.Onboard_Manager')
+data.setCell(3, 3, 44268);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'add')
+data.setCell(4, 2, 'Major_functions.Add_vendor')
+data.setCell(4, 3, 44238);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'onboard')
+data.setCell(5, 2, 'Major_functions.Onboard_Landlord')
+data.setCell(5, 3, 43034);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'add')
+data.setCell(6, 2, 'Major_functions.Add_Landlord')
+data.setCell(6, 3, 42846);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'add')
+data.setCell(7, 2, 'Major_functions.Add_Tenant')
+data.setCell(7, 3, 42452);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'add')
+data.setCell(8, 2, 'Major_functions.Add_multifamily_Property')
+data.setCell(8, 3, 41671);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'remove')
+data.setCell(9, 2, 'Major_functions.Remove_Manager')
+data.setCell(9, 3, 40228);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'remove')
+data.setCell(10, 2, 'Major_functions.Remove_Property')
+data.setCell(10, 3, 40193);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'remove')
+data.setCell(11, 2, 'Major_functions.Remove_Landlord')
+data.setCell(11, 3, 40059);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'add')
+data.setCell(12, 2, 'Major_functions.Add_Manager')
+data.setCell(12, 3, 38233);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'add')
+data.setCell(13, 2, 'Major_functions.Add_single_property')
+data.setCell(13, 3, 38123);
+window.suiteTableData['Suite1']= { tableData: data, tableDiv: 'times-div-Suite1'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 15 seconds</span>
-              <div id="times-div-Default_suite">
-              </div> <!-- times-div-Default_suite -->
+              <span class="suite-total-time">Total running time: 10 minutes</span>
+              <div id="times-div-Suite1">
+              </div> <!-- times-div-Suite1 -->
             </div> <!-- times-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="reporter-Default_suite" class="panel">
+        <div panel-name="reporter-Suite1" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Reporter output for Default suite</span>
+            <span class="header-content">Reporter output for Suite1</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">add</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">ChromeDriver initialized</span>
+                <span class="reporter-method-output">Navigated to Login page</span>
+                <span class="reporter-method-output">Entered email address</span>
+                <span class="reporter-method-output">Entered Password</span>
+                <span class="reporter-method-output">Clicked on Login button</span>
+                <span class="reporter-method-output">Clicked on Property icon</span>
+                <span class="reporter-method-output">Click on multi-familty property</span>
+                <span class="reporter-method-output">Entered the address.</span>
+                <span class="reporter-method-output">Entered the city.</span>
+                <span class="reporter-method-output">Entered the state.</span>
+                <span class="reporter-method-output">Entered the zip code.</span>
+                <span class="reporter-method-output">Clicked on save button</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">remove</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">ChromeDriver initialized</span>
+                <span class="reporter-method-output">Navigated to Login page</span>
+                <span class="reporter-method-output">Entered Email</span>
+                <span class="reporter-method-output">Entered Password</span>
+                <span class="reporter-method-output">Clicked on Login button</span>
+                <span class="reporter-method-output">Selected property to add vendor</span>
+                <span class="reporter-method-output">Removed the property successfully.</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">add</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">ChromeDriver initialized</span>
+                <span class="reporter-method-output">Navigated to Login page</span>
+                <span class="reporter-method-output">Entered Email</span>
+                <span class="reporter-method-output">Entered Password</span>
+                <span class="reporter-method-output">Clicked on Login button</span>
+                <span class="reporter-method-output">Implicit wait set for 2 seconds</span>
+                <span class="reporter-method-output">Select property to add vendor</span>
+                <span class="reporter-method-output">Clicked on Add Tenant button</span>
+                <span class="reporter-method-output">Entered First Name: temp</span>
+                <span class="reporter-method-output">Entered Last Name: tenant</span>
+                <span class="reporter-method-output">Entered Email</span>
+                <span class="reporter-method-output">Entered Phone Number</span>
+                <span class="reporter-method-output">Clicked on Save button</span>
+                <span class="reporter-method-output">Waited for 2 seconds</span>
+                <span class="reporter-method-output">Closed the browser</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">add</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">ChromeDriver initialized</span>
+                <span class="reporter-method-output">Navigated to Login page</span>
+                <span class="reporter-method-output">Entered Email</span>
+                <span class="reporter-method-output">Entered Password</span>
+                <span class="reporter-method-output">Clicked on Login button</span>
+                <span class="reporter-method-output">Implicit wait set for 2 seconds</span>
+                <span class="reporter-method-output">Select property to add vendor</span>
+                <span class="reporter-method-output">Clicked on Add Vendor icon</span>
+                <span class="reporter-method-output">Implicit wait set for 10 seconds</span>
+                <span class="reporter-method-output">Search the vendor in the list</span>
+                <span class="reporter-method-output">Clicked on assign button</span>
+                <span class="reporter-method-output">Seleted first speciality of vendor</span>
+                <span class="reporter-method-output">Clicked on submit button</span>
+                <span class="reporter-method-output">Waited for 2 seconds</span>
+                <span class="reporter-method-output">Closed the browser</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">Onboard</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">ChromeDriver initialized</span>
+                <span class="reporter-method-output">Navigated to Login page</span>
+                <span class="reporter-method-output">Entered Email</span>
+                <span class="reporter-method-output">Entered Password</span>
+                <span class="reporter-method-output">Clicked on Login button</span>
+                <span class="reporter-method-output">Implicit wait set for 2 seconds</span>
+                <span class="reporter-method-output">Select property to add vendor</span>
+                <span class="reporter-method-output">Clicked on Vendor section</span>
+                <span class="reporter-method-output">Clicked on Add Vendor icon</span>
+                <span class="reporter-method-output">Clicked on Add onboard Vendor</span>
+                <span class="reporter-method-output">Entered first name</span>
+                <span class="reporter-method-output">Entered last name</span>
+                <span class="reporter-method-output">Entered company name</span>
+                <span class="reporter-method-output">Entered email </span>
+                <span class="reporter-method-output">Entered phone number</span>
+                <span class="reporter-method-output">Clicked on Add onboard Vendor</span>
+                <span class="reporter-method-output">Waited for 2 seconds</span>
+                <span class="reporter-method-output">Closed the browser</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">remove</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">ChromeDriver initialized</span>
+                <span class="reporter-method-output">Navigated to Login page</span>
+                <span class="reporter-method-output">Entered Email</span>
+                <span class="reporter-method-output">Entered Password</span>
+                <span class="reporter-method-output">Clicked on Login button</span>
+                <span class="reporter-method-output">Implicit wait set for 2 seconds</span>
+                <span class="reporter-method-output">Select property to add vendor</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">add</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">ChromeDriver initialized</span>
+                <span class="reporter-method-output">Navigated to Login page</span>
+                <span class="reporter-method-output">Entered email address</span>
+                <span class="reporter-method-output">Entered Password</span>
+                <span class="reporter-method-output">Clicked on Login button</span>
+                <span class="reporter-method-output">Clicked on Property icon</span>
+                <span class="reporter-method-output">Entered the address.</span>
+                <span class="reporter-method-output">Entered the city.</span>
+                <span class="reporter-method-output">Entered the state.</span>
+                <span class="reporter-method-output">Entered the zip code.</span>
+                <span class="reporter-method-output">Clicked on save button</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">add</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">ChromeDriver initialized</span>
+                <span class="reporter-method-output">Navigated to Login page</span>
+                <span class="reporter-method-output">Entered Email</span>
+                <span class="reporter-method-output">Entered Password</span>
+                <span class="reporter-method-output">Clicked on Login button</span>
+                <span class="reporter-method-output">Implicit wait set for 2 seconds</span>
+                <span class="reporter-method-output">Select property to add vendor</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">remove</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">ChromeDriver initialized</span>
+                <span class="reporter-method-output">Navigated to Login page</span>
+                <span class="reporter-method-output">Entered Email</span>
+                <span class="reporter-method-output">Entered Password</span>
+                <span class="reporter-method-output">Clicked on Login button</span>
+                <span class="reporter-method-output">Implicit wait set for 2 seconds</span>
+                <span class="reporter-method-output">Select property to add vendor</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">remove</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Launching the application</span>
+                <span class="reporter-method-output">Navigated to Login page</span>
+                <span class="reporter-method-output">Entered Email</span>
+                <span class="reporter-method-output">Entered Password</span>
+                <span class="reporter-method-output">Clicked on Login button</span>
+                <span class="reporter-method-output">Implicit wait set for 2 seconds</span>
+                <span class="reporter-method-output">Select property to add vendor</span>
+                <span class="reporter-method-output">Vendor removal confirmed</span>
+                <span class="reporter-method-output">Closing the browser</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">delete</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">ChromeDriver initialized</span>
+                <span class="reporter-method-output">Navigated to Login page</span>
+                <span class="reporter-method-output">Entered Email</span>
+                <span class="reporter-method-output">Entered Password</span>
+                <span class="reporter-method-output">Clicked on Login button</span>
+                <span class="reporter-method-output">Implicit wait set for 2 seconds</span>
+                <span class="reporter-method-output">select the property</span>
+                <span class="reporter-method-output">Clicked on Delete button for tenant</span>
+                <span class="reporter-method-output">Confirmed tenant deletion</span>
+                <span class="reporter-method-output">Waited for 3 seconds</span>
+                <span class="reporter-method-output">Closed the browser</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
             <div class="reporter-method-div">
               <span class="reporter-method-name">onboard</span>
               <div class="reporter-method-output-div">
@@ -218,26 +801,259 @@ return data;
                 <span class="reporter-method-output">Select property to add vendor</span>
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">onboard</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">ChromeDriver initialized</span>
+                <span class="reporter-method-output">Navigated to Login page</span>
+                <span class="reporter-method-output">Entered Email</span>
+                <span class="reporter-method-output">Entered Password</span>
+                <span class="reporter-method-output">Clicked on Login button</span>
+                <span class="reporter-method-output">Implicit wait set for 2 seconds</span>
+                <span class="reporter-method-output">Select property to add vendor</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">add</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">ChromeDriver initialized</span>
+                <span class="reporter-method-output">Navigated to Login page</span>
+                <span class="reporter-method-output">Entered Email</span>
+                <span class="reporter-method-output">Entered Password</span>
+                <span class="reporter-method-output">Clicked on Login button</span>
+                <span class="reporter-method-output">Implicit wait set for 2 seconds</span>
+                <span class="reporter-method-output">Select property to add vendor</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="ignored-methods-Default_suite" class="panel">
+        <div panel-name="ignored-methods-Suite1" class="panel">
           <div class="main-panel-header rounded-window-top">
             <span class="header-content">0 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="chronological-Default_suite" class="panel">
+        <div panel-name="chronological-Suite1" class="panel">
           <div class="main-panel-header rounded-window-top">
             <span class="header-content">Methods in chronological order</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">Major_functions.Onboard_Landlord</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <span class="method-name">onboard</span>
+              <div class="chronological-class-name">Major_functions.Add_multifamily_Property</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
                 <span class="method-start">0 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">add</span>
+                <span class="method-start">7337 ms</span>
               </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">49021 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">Major_functions.Remove_Property</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">49091 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">remove</span>
+                <span class="method-start">54970 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">95168 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">Major_functions.Add_single_property</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">95225 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">add</span>
+                <span class="method-start">101219 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">139344 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">Major_functions.Add_Tenant</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">139401 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">add</span>
+                <span class="method-start">146244 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">188704 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">Major_functions.Remove_tenant</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">188764 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">delete</span>
+                <span class="method-start">194725 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">242069 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">Major_functions.Add_vendor</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">242250 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">add</span>
+                <span class="method-start">249079 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">293319 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">Major_functions.Remove_Vendor</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">293376 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">remove</span>
+                <span class="method-start">300244 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">356998 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">Major_functions.Onboard_Vendor</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">357053 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">Onboard</span>
+                <span class="method-start">362879 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">414386 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">Major_functions.Add_Manager</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">414441 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">add</span>
+                <span class="method-start">421311 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">459583 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">Major_functions.Remove_Manager</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">459806 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">remove</span>
+                <span class="method-start">466790 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">507021 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">Major_functions.Onboard_Manager</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">507078 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">onboard</span>
+                <span class="method-start">513138 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">557422 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">Major_functions.Add_Landlord</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">557652 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">add</span>
+                <span class="method-start">563493 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">606342 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">Major_functions.Remove_Landlord</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">606398 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">remove</span>
+                <span class="method-start">613255 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">653315 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">Major_functions.Onboard_Landlord</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">653370 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">onboard</span>
+                <span class="method-start">660246 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">703287 ms</span>
+              </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->
