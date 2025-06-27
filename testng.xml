@@ -8,7 +8,6 @@
         	
         	<!-- add and remove Property -->
 			<class name="Major_functions.Add_multifamily_Property"></class>
-			<class name="Major_functions.Remove_Property"></class>
 			<class name="Major_functions.Add_single_property"></class>
 			
 		
